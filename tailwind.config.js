@@ -10,11 +10,16 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'radial-gradient': 'radial-gradient(circle, #002855, #001524)',
+      },
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
+        inter: ['Inter'],
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 
